@@ -1,0 +1,1804 @@
+================================================================================
+CALL #001 - Apex Solutions (Healthcare)
+Date: 2026-02-11
+Participants: 5
+================================================================================
+
+[00:00] Matthew Martinez (Customer Success Manager):
+Good morning everyone, thanks for joining today's call. I'm Matthew Martinez and I'll be walking you through Foundry IQ implementation for Apex Solutions.
+
+[00:08] Matthew Martinez (Customer Success Manager):
+Let me quickly introduce everyone on the call.
+
+[00:12] Michelle Lee (Solution Engineer):
+Hi everyone, I'm Michelle Lee, Solution Engineer on the project.
+
+[00:17] Emily Thompson (Data Engineer):
+Hi everyone, I'm Emily Thompson, Data Engineer on the project.
+
+[00:22] Lisa Jackson (Technical Lead):
+Hi everyone, I'm Lisa Jackson, Technical Lead on the project.
+
+[00:27] Daniel Jones (Solution Architect):
+Hi everyone, I'm Daniel Jones, Solution Architect on the project.
+
+[00:37] Matthew Martinez (Customer Success Manager):
+What about data privacy? That's critical for our implementation.
+
+[00:48] Michelle Lee (Solution Engineer):
+Right, and we can use Quiver for the complex analytical queries. The query optimization in Foundry IQ is pretty impressive.
+
+[01:03] Michelle Lee (Solution Engineer):
+We should also plan for the ETL jobs. I'm thinking we use the Code Repositories feature to version control our transformations.
+
+[01:14] Lisa Jackson (Technical Lead):
+I think we can have the basic ontology and core pipelines ready in about 6 weeks, then iterate from there.
+
+[01:24] Matthew Martinez (Customer Success Manager):
+Yes, I've created a draft ontology with about 15 object types. The main challenge is the data sync frequency - we need near real-time for some datasets.
+
+[01:38] Daniel Jones (Solution Architect):
+From a data privacy perspective, we need to ensure the integration follows best practices. I've been reviewing the API documentation.
+
+[01:47] Michelle Lee (Solution Engineer):
+Sounds good. Thanks everyone for the productive discussion.
+
+[02:02] Emily Thompson (Data Engineer):
+Foundry IQ supports streaming ingestion through the event-based pipelines. We could leverage that for time-sensitive data.
+
+[02:17] Michelle Lee (Solution Engineer):
+So let's dive into the architecture. We're looking at implementing Foundry IQ primarily for patient analytics. What are your thoughts on the data pipeline design?
+
+[02:28] Michelle Lee (Solution Engineer):
+Agreed. Are there any blockers we need to address before we proceed?
+
+[02:42] Matthew Martinez (Customer Success Manager):
+I've worked with the Workshop module before - it's quite powerful for building custom applications on top of the ontology.
+
+[02:57] Daniel Jones (Solution Architect):
+Have we discussed the deployment model? Are we going cloud-native or hybrid?
+
+[03:11] Michelle Lee (Solution Engineer):
+Yes, Foundry IQ supports data quality checks at multiple stages. We can add assertions and schema validations.
+
+[03:24] Matthew Martinez (Customer Success Manager):
+I'm concerned about data quality. Can we implement validation checks in the pipeline?
+
+[03:37] Emily Thompson (Data Engineer):
+Definitely. And we can set up CI/CD pipelines to automate the deployment of those transformations.
+
+[03:45] Lisa Jackson (Technical Lead):
+What's the timeline looking like for the initial MVP?
+
+[03:55] Michelle Lee (Solution Engineer):
+For the patient analytics use case, we'll need to create several derived datasets. The build scheduler will be important there.
+
+[04:03] Matthew Martinez (Customer Success Manager):
+We're planning for a cloud deployment on AWS. Foundry IQ integrates well with existing cloud infrastructure.
+
+[04:13] Lisa Jackson (Technical Lead):
+Good point. Foundry IQ has built-in governance features. We can configure data lineage tracking and implement role-based access controls at the ontology level.
+
+[04:24] Emily Thompson (Data Engineer):
+Perfect. Let's set up a follow-up call for next week to review the initial setup.
+
+[04:34] Michelle Lee (Solution Engineer):
+I think we should consider a multi-layered approach. We can use Foundry IQ's data transformation capabilities to build our intermediate layer.
+
+[04:42] Emily Thompson (Data Engineer):
+Agreed. We'll need to set up the ontology properly. Have we mapped out all the object types we need to ingest?
+
+[04:55] Michelle Lee (Solution Engineer):
+That works. Let's make sure we document everything properly in the Foundry IQ metadata.
+
+[05:09] Michelle Lee (Solution Engineer):
+Just need final approval on the data security protocols. Should have that by end of week.
+
+
+
+================================================================================
+CALL #002 - PrimeWorks (Financial Services)
+Date: 2026-02-11
+Participants: 3
+================================================================================
+
+[00:00] Sarah Miller (Customer Success Manager):
+Good morning everyone, thanks for joining today's call. I'm Sarah Miller and I'll be walking you through Foundry IQ implementation for PrimeWorks.
+
+[00:08] Sarah Miller (Customer Success Manager):
+Let me quickly introduce everyone on the call.
+
+[00:12] Sarah Taylor (Solution Engineer):
+Hi everyone, I'm Sarah Taylor, Solution Engineer on the project.
+
+[00:17] Chris Clark (Product Manager):
+Hi everyone, I'm Chris Clark, Product Manager on the project.
+
+[00:27] Chris Clark (Product Manager):
+Right, and we can use Quiver for the complex analytical queries. The query optimization in Foundry IQ is pretty impressive.
+
+[00:37] Sarah Miller (Customer Success Manager):
+Agreed. We'll need to set up the ontology properly. Have we mapped out all the object types we need to ingest?
+
+[00:47] Sarah Miller (Customer Success Manager):
+Yes, Foundry IQ supports data quality checks at multiple stages. We can add assertions and schema validations.
+
+[01:00] Sarah Miller (Customer Success Manager):
+Perfect. Let's set up a follow-up call for next week to review the initial setup.
+
+[01:10] Sarah Taylor (Solution Engineer):
+We should also plan for the ETL jobs. I'm thinking we use the Code Repositories feature to version control our transformations.
+
+[01:23] Sarah Miller (Customer Success Manager):
+Yes, I've created a draft ontology with about 15 object types. The main challenge is the data sync frequency - we need near real-time for some datasets.
+
+[01:32] Chris Clark (Product Manager):
+We're planning for a cloud deployment on AWS. Foundry IQ integrates well with existing cloud infrastructure.
+
+[01:46] Chris Clark (Product Manager):
+So let's dive into the architecture. We're looking at implementing Foundry IQ primarily for risk analytics. What are your thoughts on the data pipeline design?
+
+[01:57] Sarah Taylor (Solution Engineer):
+Agreed. Are there any blockers we need to address before we proceed?
+
+[02:07] Sarah Miller (Customer Success Manager):
+For the risk analytics use case, we'll need to create several derived datasets. The build scheduler will be important there.
+
+[02:18] Sarah Taylor (Solution Engineer):
+Just need final approval on the data security protocols. Should have that by end of week.
+
+[02:27] Sarah Miller (Customer Success Manager):
+I think we should consider a multi-layered approach. We can use Foundry IQ's data transformation capabilities to build our intermediate layer.
+
+[02:36] Sarah Taylor (Solution Engineer):
+Have we discussed the deployment model? Are we going cloud-native or hybrid?
+
+[02:50] Chris Clark (Product Manager):
+I've worked with the Workshop module before - it's quite powerful for building custom applications on top of the ontology.
+
+[02:59] Sarah Taylor (Solution Engineer):
+I'm concerned about data quality. Can we implement validation checks in the pipeline?
+
+[03:09] Chris Clark (Product Manager):
+What's the timeline looking like for the initial MVP?
+
+[03:22] Sarah Taylor (Solution Engineer):
+Definitely. And we can set up CI/CD pipelines to automate the deployment of those transformations.
+
+[03:34] Chris Clark (Product Manager):
+That works. Let's make sure we document everything properly in the Foundry IQ metadata.
+
+[03:42] Sarah Miller (Customer Success Manager):
+Sounds good. Thanks everyone for the productive discussion.
+
+[03:52] Chris Clark (Product Manager):
+What about SOC 2 compliance? That's critical for our implementation.
+
+[04:05] Sarah Miller (Customer Success Manager):
+Foundry IQ supports streaming ingestion through the event-based pipelines. We could leverage that for time-sensitive data.
+
+[04:16] Chris Clark (Product Manager):
+From a SOC 2 compliance perspective, we need to ensure the integration follows best practices. I've been reviewing the API documentation.
+
+[04:25] Sarah Taylor (Solution Engineer):
+Good point. Foundry IQ has built-in governance features. We can configure data lineage tracking and implement role-based access controls at the ontology level.
+
+[04:37] Sarah Taylor (Solution Engineer):
+I think we can have the basic ontology and core pipelines ready in about 6 weeks, then iterate from there.
+
+
+
+================================================================================
+CALL #003 - Catalyst Corp (Retail)
+Date: 2026-02-11
+Participants: 3
+================================================================================
+
+[00:00] Kevin Rodriguez (Solution Architect):
+Good morning everyone, thanks for joining today's call. I'm Kevin Rodriguez and I'll be walking you through Foundry IQ implementation for Catalyst Corp.
+
+[00:08] Kevin Rodriguez (Solution Architect):
+Let me quickly introduce everyone on the call.
+
+[00:12] Brian Davis (Product Manager):
+Hi everyone, I'm Brian Davis, Product Manager on the project.
+
+[00:17] David Jones (Customer Success Manager):
+Hi everyone, I'm David Jones, Customer Success Manager on the project.
+
+[00:27] Kevin Rodriguez (Solution Architect):
+Have we discussed the deployment model? Are we going cloud-native or hybrid?
+
+[00:37] Kevin Rodriguez (Solution Architect):
+Yes, Foundry IQ supports data quality checks at multiple stages. We can add assertions and schema validations.
+
+[00:51] Kevin Rodriguez (Solution Architect):
+Just need final approval on the data security protocols. Should have that by end of week.
+
+[01:06] Kevin Rodriguez (Solution Architect):
+From a inventory optimization perspective, we need to ensure the integration follows best practices. I've been reviewing the API documentation.
+
+[01:20] Kevin Rodriguez (Solution Architect):
+I think we should consider a multi-layered approach. We can use Foundry IQ's data transformation capabilities to build our intermediate layer.
+
+[01:35] David Jones (Customer Success Manager):
+What about inventory optimization? That's critical for our implementation.
+
+[01:45] Kevin Rodriguez (Solution Architect):
+Foundry IQ supports streaming ingestion through the event-based pipelines. We could leverage that for time-sensitive data.
+
+[01:56] Kevin Rodriguez (Solution Architect):
+That works. Let's make sure we document everything properly in the Foundry IQ metadata.
+
+[02:11] David Jones (Customer Success Manager):
+What's the timeline looking like for the initial MVP?
+
+[02:24] Brian Davis (Product Manager):
+Agreed. Are there any blockers we need to address before we proceed?
+
+[02:32] Brian Davis (Product Manager):
+I've worked with the Workshop module before - it's quite powerful for building custom applications on top of the ontology.
+
+[02:44] Brian Davis (Product Manager):
+I think we can have the basic ontology and core pipelines ready in about 6 weeks, then iterate from there.
+
+[02:58] Kevin Rodriguez (Solution Architect):
+Yes, I've created a draft ontology with about 15 object types. The main challenge is the data sync frequency - we need near real-time for some datasets.
+
+[03:13] David Jones (Customer Success Manager):
+I'm concerned about data quality. Can we implement validation checks in the pipeline?
+
+[03:28] Kevin Rodriguez (Solution Architect):
+Agreed. We'll need to set up the ontology properly. Have we mapped out all the object types we need to ingest?
+
+[03:36] Kevin Rodriguez (Solution Architect):
+So let's dive into the architecture. We're looking at implementing Foundry IQ primarily for customer segmentation. What are your thoughts on the data pipeline design?
+
+[03:45] Kevin Rodriguez (Solution Architect):
+Sounds good. Thanks everyone for the productive discussion.
+
+[03:54] David Jones (Customer Success Manager):
+Right, and we can use Quiver for the complex analytical queries. The query optimization in Foundry IQ is pretty impressive.
+
+[04:08] David Jones (Customer Success Manager):
+For the customer segmentation use case, we'll need to create several derived datasets. The build scheduler will be important there.
+
+[04:19] Brian Davis (Product Manager):
+Perfect. Let's set up a follow-up call for next week to review the initial setup.
+
+[04:31] Brian Davis (Product Manager):
+We're planning for a cloud deployment on AWS. Foundry IQ integrates well with existing cloud infrastructure.
+
+[04:39] Brian Davis (Product Manager):
+We should also plan for the ETL jobs. I'm thinking we use the Code Repositories feature to version control our transformations.
+
+[04:50] Brian Davis (Product Manager):
+Good point. Foundry IQ has built-in governance features. We can configure data lineage tracking and implement role-based access controls at the ontology level.
+
+[05:00] David Jones (Customer Success Manager):
+Definitely. And we can set up CI/CD pipelines to automate the deployment of those transformations.
+
+
+
+================================================================================
+CALL #004 - Velocity Group (Manufacturing)
+Date: 2026-02-11
+Participants: 3
+================================================================================
+
+[00:00] Lisa Rodriguez (Solution Engineer):
+Good morning everyone, thanks for joining today's call. I'm Lisa Rodriguez and I'll be walking you through Foundry IQ implementation for Velocity Group.
+
+[00:08] Lisa Rodriguez (Solution Engineer):
+Let me quickly introduce everyone on the call.
+
+[00:12] Matthew Harris (Solution Architect):
+Hi everyone, I'm Matthew Harris, Solution Architect on the project.
+
+[00:17] Matthew Brown (Customer Success Manager):
+Hi everyone, I'm Matthew Brown, Customer Success Manager on the project.
+
+[00:27] Lisa Rodriguez (Solution Engineer):
+I think we can have the basic ontology and core pipelines ready in about 6 weeks, then iterate from there.
+
+[00:38] Matthew Brown (Customer Success Manager):
+I've worked with the Workshop module before - it's quite powerful for building custom applications on top of the ontology.
+
+[00:50] Lisa Rodriguez (Solution Engineer):
+Right, and we can use Quiver for the complex analytical queries. The query optimization in Foundry IQ is pretty impressive.
+
+[00:58] Matthew Brown (Customer Success Manager):
+What's the timeline looking like for the initial MVP?
+
+[01:08] Lisa Rodriguez (Solution Engineer):
+Have we discussed the deployment model? Are we going cloud-native or hybrid?
+
+[01:17] Matthew Harris (Solution Architect):
+Agreed. Are there any blockers we need to address before we proceed?
+
+[01:31] Matthew Brown (Customer Success Manager):
+That works. Let's make sure we document everything properly in the Foundry IQ metadata.
+
+[01:44] Lisa Rodriguez (Solution Engineer):
+Sounds good. Thanks everyone for the productive discussion.
+
+[01:52] Matthew Brown (Customer Success Manager):
+Agreed. We'll need to set up the ontology properly. Have we mapped out all the object types we need to ingest?
+
+[02:07] Lisa Rodriguez (Solution Engineer):
+I'm concerned about data quality. Can we implement validation checks in the pipeline?
+
+[02:17] Lisa Rodriguez (Solution Engineer):
+From a quality control perspective, we need to ensure the integration follows best practices. I've been reviewing the API documentation.
+
+[02:28] Lisa Rodriguez (Solution Engineer):
+What about quality control? That's critical for our implementation.
+
+[02:41] Lisa Rodriguez (Solution Engineer):
+Just need final approval on the data security protocols. Should have that by end of week.
+
+[02:51] Matthew Brown (Customer Success Manager):
+Yes, I've created a draft ontology with about 15 object types. The main challenge is the data sync frequency - we need near real-time for some datasets.
+
+[03:03] Matthew Brown (Customer Success Manager):
+We should also plan for the ETL jobs. I'm thinking we use the Code Repositories feature to version control our transformations.
+
+[03:18] Matthew Brown (Customer Success Manager):
+We're planning for a cloud deployment on AWS. Foundry IQ integrates well with existing cloud infrastructure.
+
+[03:33] Matthew Harris (Solution Architect):
+For the equipment monitoring use case, we'll need to create several derived datasets. The build scheduler will be important there.
+
+[03:42] Matthew Brown (Customer Success Manager):
+So let's dive into the architecture. We're looking at implementing Foundry IQ primarily for equipment monitoring. What are your thoughts on the data pipeline design?
+
+[03:55] Lisa Rodriguez (Solution Engineer):
+I think we should consider a multi-layered approach. We can use Foundry IQ's data transformation capabilities to build our intermediate layer.
+
+[04:04] Lisa Rodriguez (Solution Engineer):
+Perfect. Let's set up a follow-up call for next week to review the initial setup.
+
+[04:12] Lisa Rodriguez (Solution Engineer):
+Good point. Foundry IQ has built-in governance features. We can configure data lineage tracking and implement role-based access controls at the ontology level.
+
+[04:26] Matthew Harris (Solution Architect):
+Foundry IQ supports streaming ingestion through the event-based pipelines. We could leverage that for time-sensitive data.
+
+[04:35] Matthew Harris (Solution Architect):
+Yes, Foundry IQ supports data quality checks at multiple stages. We can add assertions and schema validations.
+
+
+
+================================================================================
+CALL #005 - Velocity Group (Technology)
+Date: 2026-02-11
+Participants: 4
+================================================================================
+
+[00:00] Michelle Thompson (Solution Engineer):
+Good morning everyone, thanks for joining today's call. I'm Michelle Thompson and I'll be walking you through Foundry IQ implementation for Velocity Group.
+
+[00:08] Michelle Thompson (Solution Engineer):
+Let me quickly introduce everyone on the call.
+
+[00:12] Jennifer Martin (Solution Architect):
+Hi everyone, I'm Jennifer Martin, Solution Architect on the project.
+
+[00:17] Ashley Thompson (Product Manager):
+Hi everyone, I'm Ashley Thompson, Product Manager on the project.
+
+[00:22] Kevin Thomas (Technical Lead):
+Hi everyone, I'm Kevin Thomas, Technical Lead on the project.
+
+[00:32] Jennifer Martin (Solution Architect):
+We're planning for a cloud deployment on AWS. Foundry IQ integrates well with existing cloud infrastructure.
+
+[00:46] Michelle Thompson (Solution Engineer):
+Right, and we can use Quiver for the complex analytical queries. The query optimization in Foundry IQ is pretty impressive.
+
+[00:59] Kevin Thomas (Technical Lead):
+What's the timeline looking like for the initial MVP?
+
+[01:13] Kevin Thomas (Technical Lead):
+I'm concerned about data quality. Can we implement validation checks in the pipeline?
+
+[01:25] Jennifer Martin (Solution Architect):
+I think we should consider a multi-layered approach. We can use Foundry IQ's data transformation capabilities to build our intermediate layer.
+
+[01:37] Jennifer Martin (Solution Architect):
+For the user behavior tracking use case, we'll need to create several derived datasets. The build scheduler will be important there.
+
+[01:50] Jennifer Martin (Solution Architect):
+Yes, I've created a draft ontology with about 15 object types. The main challenge is the data sync frequency - we need near real-time for some datasets.
+
+[02:00] Ashley Thompson (Product Manager):
+Agreed. We'll need to set up the ontology properly. Have we mapped out all the object types we need to ingest?
+
+[02:10] Michelle Thompson (Solution Engineer):
+What about data pipeline efficiency? That's critical for our implementation.
+
+[02:24] Kevin Thomas (Technical Lead):
+Yes, Foundry IQ supports data quality checks at multiple stages. We can add assertions and schema validations.
+
+[02:32] Ashley Thompson (Product Manager):
+Sounds good. Thanks everyone for the productive discussion.
+
+[02:44] Ashley Thompson (Product Manager):
+Just need final approval on the data security protocols. Should have that by end of week.
+
+[02:58] Kevin Thomas (Technical Lead):
+Agreed. Are there any blockers we need to address before we proceed?
+
+[03:10] Michelle Thompson (Solution Engineer):
+That works. Let's make sure we document everything properly in the Foundry IQ metadata.
+
+[03:24] Michelle Thompson (Solution Engineer):
+So let's dive into the architecture. We're looking at implementing Foundry IQ primarily for user behavior tracking. What are your thoughts on the data pipeline design?
+
+[03:34] Jennifer Martin (Solution Architect):
+Good point. Foundry IQ has built-in governance features. We can configure data lineage tracking and implement role-based access controls at the ontology level.
+
+[03:43] Ashley Thompson (Product Manager):
+Perfect. Let's set up a follow-up call for next week to review the initial setup.
+
+[03:54] Jennifer Martin (Solution Architect):
+I've worked with the Workshop module before - it's quite powerful for building custom applications on top of the ontology.
+
+[04:05] Jennifer Martin (Solution Architect):
+Have we discussed the deployment model? Are we going cloud-native or hybrid?
+
+[04:19] Jennifer Martin (Solution Architect):
+We should also plan for the ETL jobs. I'm thinking we use the Code Repositories feature to version control our transformations.
+
+[04:34] Michelle Thompson (Solution Engineer):
+Definitely. And we can set up CI/CD pipelines to automate the deployment of those transformations.
+
+
+
+================================================================================
+CALL #006 - Innovate Solutions (Healthcare)
+Date: 2026-02-11
+Participants: 3
+================================================================================
+
+[00:00] Rachel Rodriguez (Data Engineer):
+Good morning everyone, thanks for joining today's call. I'm Rachel Rodriguez and I'll be walking you through Foundry IQ implementation for Innovate Solutions.
+
+[00:08] Rachel Rodriguez (Data Engineer):
+Let me quickly introduce everyone on the call.
+
+[00:12] Tom White (Solution Engineer):
+Hi everyone, I'm Tom White, Solution Engineer on the project.
+
+[00:17] Jessica Rodriguez (Product Manager):
+Hi everyone, I'm Jessica Rodriguez, Product Manager on the project.
+
+[00:27] Tom White (Solution Engineer):
+So let's dive into the architecture. We're looking at implementing Foundry IQ primarily for population health management. What are your thoughts on the data pipeline design?
+
+[00:35] Rachel Rodriguez (Data Engineer):
+I've worked with the Workshop module before - it's quite powerful for building custom applications on top of the ontology.
+
+[00:50] Rachel Rodriguez (Data Engineer):
+We're planning for a cloud deployment on AWS. Foundry IQ integrates well with existing cloud infrastructure.
+
+[01:05] Jessica Rodriguez (Product Manager):
+From a HIPAA compliance perspective, we need to ensure the integration follows best practices. I've been reviewing the API documentation.
+
+[01:19] Tom White (Solution Engineer):
+What about HIPAA compliance? That's critical for our implementation.
+
+[01:32] Tom White (Solution Engineer):
+For the population health management use case, we'll need to create several derived datasets. The build scheduler will be important there.
+
+[01:45] Tom White (Solution Engineer):
+I think we can have the basic ontology and core pipelines ready in about 6 weeks, then iterate from there.
+
+[01:53] Jessica Rodriguez (Product Manager):
+Yes, Foundry IQ supports data quality checks at multiple stages. We can add assertions and schema validations.
+
+[02:06] Rachel Rodriguez (Data Engineer):
+Right, and we can use Quiver for the complex analytical queries. The query optimization in Foundry IQ is pretty impressive.
+
+[02:18] Jessica Rodriguez (Product Manager):
+Foundry IQ supports streaming ingestion through the event-based pipelines. We could leverage that for time-sensitive data.
+
+[02:32] Jessica Rodriguez (Product Manager):
+I'm concerned about data quality. Can we implement validation checks in the pipeline?
+
+[02:40] Jessica Rodriguez (Product Manager):
+Yes, I've created a draft ontology with about 15 object types. The main challenge is the data sync frequency - we need near real-time for some datasets.
+
+[02:52] Jessica Rodriguez (Product Manager):
+That works. Let's make sure we document everything properly in the Foundry IQ metadata.
+
+[03:03] Rachel Rodriguez (Data Engineer):
+Just need final approval on the data security protocols. Should have that by end of week.
+
+[03:17] Rachel Rodriguez (Data Engineer):
+I think we should consider a multi-layered approach. We can use Foundry IQ's data transformation capabilities to build our intermediate layer.
+
+[03:28] Tom White (Solution Engineer):
+What's the timeline looking like for the initial MVP?
+
+[03:41] Tom White (Solution Engineer):
+Agreed. Are there any blockers we need to address before we proceed?
+
+[03:50] Jessica Rodriguez (Product Manager):
+Sounds good. Thanks everyone for the productive discussion.
+
+[04:05] Tom White (Solution Engineer):
+Good point. Foundry IQ has built-in governance features. We can configure data lineage tracking and implement role-based access controls at the ontology level.
+
+[04:17] Rachel Rodriguez (Data Engineer):
+Definitely. And we can set up CI/CD pipelines to automate the deployment of those transformations.
+
+[04:28] Rachel Rodriguez (Data Engineer):
+Agreed. We'll need to set up the ontology properly. Have we mapped out all the object types we need to ingest?
+
+
+
+================================================================================
+CALL #007 - Innovate Solutions (Financial Services)
+Date: 2026-02-11
+Participants: 4
+================================================================================
+
+[00:00] Ashley Lee (Product Manager):
+Good morning everyone, thanks for joining today's call. I'm Ashley Lee and I'll be walking you through Foundry IQ implementation for Innovate Solutions.
+
+[00:08] Ashley Lee (Product Manager):
+Let me quickly introduce everyone on the call.
+
+[00:12] James Jackson (Customer Success Manager):
+Hi everyone, I'm James Jackson, Customer Success Manager on the project.
+
+[00:17] Rachel Lee (Technical Lead):
+Hi everyone, I'm Rachel Lee, Technical Lead on the project.
+
+[00:22] Rachel Jones (Solution Engineer):
+Hi everyone, I'm Rachel Jones, Solution Engineer on the project.
+
+[00:32] Ashley Lee (Product Manager):
+Have we discussed the deployment model? Are we going cloud-native or hybrid?
+
+[00:47] Rachel Lee (Technical Lead):
+So let's dive into the architecture. We're looking at implementing Foundry IQ primarily for customer behavior analysis. What are your thoughts on the data pipeline design?
+
+[00:57] Ashley Lee (Product Manager):
+I think we should consider a multi-layered approach. We can use Foundry IQ's data transformation capabilities to build our intermediate layer.
+
+[01:12] Ashley Lee (Product Manager):
+Definitely. And we can set up CI/CD pipelines to automate the deployment of those transformations.
+
+[01:21] Rachel Lee (Technical Lead):
+Agreed. Are there any blockers we need to address before we proceed?
+
+[01:30] Ashley Lee (Product Manager):
+Sounds good. Thanks everyone for the productive discussion.
+
+[01:45] James Jackson (Customer Success Manager):
+Agreed. We'll need to set up the ontology properly. Have we mapped out all the object types we need to ingest?
+
+[02:00] Rachel Jones (Solution Engineer):
+Foundry IQ supports streaming ingestion through the event-based pipelines. We could leverage that for time-sensitive data.
+
+[02:14] Rachel Jones (Solution Engineer):
+I'm concerned about data quality. Can we implement validation checks in the pipeline?
+
+[02:22] Ashley Lee (Product Manager):
+Perfect. Let's set up a follow-up call for next week to review the initial setup.
+
+[02:33] Ashley Lee (Product Manager):
+For the customer behavior analysis use case, we'll need to create several derived datasets. The build scheduler will be important there.
+
+[02:41] Rachel Jones (Solution Engineer):
+Yes, I've created a draft ontology with about 15 object types. The main challenge is the data sync frequency - we need near real-time for some datasets.
+
+[02:56] Ashley Lee (Product Manager):
+What about SOC 2 compliance? That's critical for our implementation.
+
+[03:05] Rachel Jones (Solution Engineer):
+What's the timeline looking like for the initial MVP?
+
+[03:19] Ashley Lee (Product Manager):
+I've worked with the Workshop module before - it's quite powerful for building custom applications on top of the ontology.
+
+[03:27] James Jackson (Customer Success Manager):
+From a SOC 2 compliance perspective, we need to ensure the integration follows best practices. I've been reviewing the API documentation.
+
+[03:35] Ashley Lee (Product Manager):
+We're planning for a cloud deployment on AWS. Foundry IQ integrates well with existing cloud infrastructure.
+
+[03:45] James Jackson (Customer Success Manager):
+That works. Let's make sure we document everything properly in the Foundry IQ metadata.
+
+[03:57] Rachel Lee (Technical Lead):
+Right, and we can use Quiver for the complex analytical queries. The query optimization in Foundry IQ is pretty impressive.
+
+[04:10] Rachel Jones (Solution Engineer):
+Good point. Foundry IQ has built-in governance features. We can configure data lineage tracking and implement role-based access controls at the ontology level.
+
+[04:23] James Jackson (Customer Success Manager):
+Just need final approval on the data security protocols. Should have that by end of week.
+
+[04:31] Rachel Jones (Solution Engineer):
+We should also plan for the ETL jobs. I'm thinking we use the Code Repositories feature to version control our transformations.
+
+
+
+================================================================================
+CALL #008 - Vertex Group (Retail)
+Date: 2026-02-11
+Participants: 4
+================================================================================
+
+[00:00] Michael Martinez (Solution Engineer):
+Good morning everyone, thanks for joining today's call. I'm Michael Martinez and I'll be walking you through Foundry IQ implementation for Vertex Group.
+
+[00:08] Michael Martinez (Solution Engineer):
+Let me quickly introduce everyone on the call.
+
+[00:12] Robert Garcia (Product Manager):
+Hi everyone, I'm Robert Garcia, Product Manager on the project.
+
+[00:17] Jessica Anderson (Customer Success Manager):
+Hi everyone, I'm Jessica Anderson, Customer Success Manager on the project.
+
+[00:22] Ashley Martinez (Technical Lead):
+Hi everyone, I'm Ashley Martinez, Technical Lead on the project.
+
+[00:32] Ashley Martinez (Technical Lead):
+Right, and we can use Quiver for the complex analytical queries. The query optimization in Foundry IQ is pretty impressive.
+
+[00:40] Ashley Martinez (Technical Lead):
+Have we discussed the deployment model? Are we going cloud-native or hybrid?
+
+[00:54] Robert Garcia (Product Manager):
+From a inventory optimization perspective, we need to ensure the integration follows best practices. I've been reviewing the API documentation.
+
+[01:07] Robert Garcia (Product Manager):
+So let's dive into the architecture. We're looking at implementing Foundry IQ primarily for pricing optimization. What are your thoughts on the data pipeline design?
+
+[01:19] Ashley Martinez (Technical Lead):
+We're planning for a cloud deployment on AWS. Foundry IQ integrates well with existing cloud infrastructure.
+
+[01:29] Michael Martinez (Solution Engineer):
+Just need final approval on the data security protocols. Should have that by end of week.
+
+[01:44] Robert Garcia (Product Manager):
+I've worked with the Workshop module before - it's quite powerful for building custom applications on top of the ontology.
+
+[01:54] Jessica Anderson (Customer Success Manager):
+Good point. Foundry IQ has built-in governance features. We can configure data lineage tracking and implement role-based access controls at the ontology level.
+
+[02:04] Robert Garcia (Product Manager):
+I'm concerned about data quality. Can we implement validation checks in the pipeline?
+
+[02:14] Jessica Anderson (Customer Success Manager):
+Foundry IQ supports streaming ingestion through the event-based pipelines. We could leverage that for time-sensitive data.
+
+[02:23] Ashley Martinez (Technical Lead):
+Yes, Foundry IQ supports data quality checks at multiple stages. We can add assertions and schema validations.
+
+[02:34] Jessica Anderson (Customer Success Manager):
+I think we should consider a multi-layered approach. We can use Foundry IQ's data transformation capabilities to build our intermediate layer.
+
+[02:44] Ashley Martinez (Technical Lead):
+For the pricing optimization use case, we'll need to create several derived datasets. The build scheduler will be important there.
+
+[02:56] Michael Martinez (Solution Engineer):
+That works. Let's make sure we document everything properly in the Foundry IQ metadata.
+
+[03:05] Ashley Martinez (Technical Lead):
+Definitely. And we can set up CI/CD pipelines to automate the deployment of those transformations.
+
+[03:17] Jessica Anderson (Customer Success Manager):
+I think we can have the basic ontology and core pipelines ready in about 6 weeks, then iterate from there.
+
+[03:25] Michael Martinez (Solution Engineer):
+What's the timeline looking like for the initial MVP?
+
+[03:35] Michael Martinez (Solution Engineer):
+We should also plan for the ETL jobs. I'm thinking we use the Code Repositories feature to version control our transformations.
+
+[03:50] Jessica Anderson (Customer Success Manager):
+Sounds good. Thanks everyone for the productive discussion.
+
+[04:00] Robert Garcia (Product Manager):
+Yes, I've created a draft ontology with about 15 object types. The main challenge is the data sync frequency - we need near real-time for some datasets.
+
+[04:10] Robert Garcia (Product Manager):
+Perfect. Let's set up a follow-up call for next week to review the initial setup.
+
+[04:23] Jessica Anderson (Customer Success Manager):
+What about inventory optimization? That's critical for our implementation.
+
+[04:35] Michael Martinez (Solution Engineer):
+Agreed. Are there any blockers we need to address before we proceed?
+
+[04:43] Jessica Anderson (Customer Success Manager):
+Agreed. We'll need to set up the ontology properly. Have we mapped out all the object types we need to ingest?
+
+
+
+================================================================================
+CALL #009 - Catalyst Corp (Manufacturing)
+Date: 2026-02-11
+Participants: 5
+================================================================================
+
+[00:00] Tom Davis (Solution Engineer):
+Good morning everyone, thanks for joining today's call. I'm Tom Davis and I'll be walking you through Foundry IQ implementation for Catalyst Corp.
+
+[00:08] Tom Davis (Solution Engineer):
+Let me quickly introduce everyone on the call.
+
+[00:12] Matthew Thompson (Customer Success Manager):
+Hi everyone, I'm Matthew Thompson, Customer Success Manager on the project.
+
+[00:17] Brian White (Technical Lead):
+Hi everyone, I'm Brian White, Technical Lead on the project.
+
+[00:22] James Harris (Data Engineer):
+Hi everyone, I'm James Harris, Data Engineer on the project.
+
+[00:27] Kevin Garcia (Solution Architect):
+Hi everyone, I'm Kevin Garcia, Solution Architect on the project.
+
+[00:37] James Harris (Data Engineer):
+Yes, Foundry IQ supports data quality checks at multiple stages. We can add assertions and schema validations.
+
+[00:50] James Harris (Data Engineer):
+So let's dive into the architecture. We're looking at implementing Foundry IQ primarily for equipment monitoring. What are your thoughts on the data pipeline design?
+
+[01:05] Tom Davis (Solution Engineer):
+We're planning for a cloud deployment on AWS. Foundry IQ integrates well with existing cloud infrastructure.
+
+[01:19] Tom Davis (Solution Engineer):
+That works. Let's make sure we document everything properly in the Foundry IQ metadata.
+
+[01:33] Kevin Garcia (Solution Architect):
+Sounds good. Thanks everyone for the productive discussion.
+
+[01:43] James Harris (Data Engineer):
+Good point. Foundry IQ has built-in governance features. We can configure data lineage tracking and implement role-based access controls at the ontology level.
+
+[01:53] Matthew Thompson (Customer Success Manager):
+I've worked with the Workshop module before - it's quite powerful for building custom applications on top of the ontology.
+
+[02:07] Kevin Garcia (Solution Architect):
+What about supply chain optimization? That's critical for our implementation.
+
+[02:21] Brian White (Technical Lead):
+Foundry IQ supports streaming ingestion through the event-based pipelines. We could leverage that for time-sensitive data.
+
+[02:33] Brian White (Technical Lead):
+Yes, I've created a draft ontology with about 15 object types. The main challenge is the data sync frequency - we need near real-time for some datasets.
+
+[02:42] Matthew Thompson (Customer Success Manager):
+Right, and we can use Quiver for the complex analytical queries. The query optimization in Foundry IQ is pretty impressive.
+
+[02:54] Tom Davis (Solution Engineer):
+Have we discussed the deployment model? Are we going cloud-native or hybrid?
+
+[03:03] Kevin Garcia (Solution Architect):
+From a supply chain optimization perspective, we need to ensure the integration follows best practices. I've been reviewing the API documentation.
+
+[03:13] Matthew Thompson (Customer Success Manager):
+For the equipment monitoring use case, we'll need to create several derived datasets. The build scheduler will be important there.
+
+[03:21] Matthew Thompson (Customer Success Manager):
+Just need final approval on the data security protocols. Should have that by end of week.
+
+[03:32] James Harris (Data Engineer):
+What's the timeline looking like for the initial MVP?
+
+[03:43] Brian White (Technical Lead):
+Agreed. Are there any blockers we need to address before we proceed?
+
+[03:54] Tom Davis (Solution Engineer):
+I'm concerned about data quality. Can we implement validation checks in the pipeline?
+
+[04:07] James Harris (Data Engineer):
+We should also plan for the ETL jobs. I'm thinking we use the Code Repositories feature to version control our transformations.
+
+[04:18] Kevin Garcia (Solution Architect):
+I think we can have the basic ontology and core pipelines ready in about 6 weeks, then iterate from there.
+
+
+
+================================================================================
+CALL #010 - TechVenture Inc (Technology)
+Date: 2026-02-11
+Participants: 4
+================================================================================
+
+[00:00] Kevin Williams (Data Engineer):
+Good morning everyone, thanks for joining today's call. I'm Kevin Williams and I'll be walking you through Foundry IQ implementation for TechVenture Inc.
+
+[00:08] Kevin Williams (Data Engineer):
+Let me quickly introduce everyone on the call.
+
+[00:12] Matthew Thomas (Solution Engineer):
+Hi everyone, I'm Matthew Thomas, Solution Engineer on the project.
+
+[00:17] Amanda Miller (Product Manager):
+Hi everyone, I'm Amanda Miller, Product Manager on the project.
+
+[00:22] James Garcia (Customer Success Manager):
+Hi everyone, I'm James Garcia, Customer Success Manager on the project.
+
+[00:32] Kevin Williams (Data Engineer):
+We should also plan for the ETL jobs. I'm thinking we use the Code Repositories feature to version control our transformations.
+
+[00:44] Matthew Thomas (Solution Engineer):
+What's the timeline looking like for the initial MVP?
+
+[00:54] Amanda Miller (Product Manager):
+From a cloud architecture perspective, we need to ensure the integration follows best practices. I've been reviewing the API documentation.
+
+[01:03] James Garcia (Customer Success Manager):
+Sounds good. Thanks everyone for the productive discussion.
+
+[01:16] Matthew Thomas (Solution Engineer):
+So let's dive into the architecture. We're looking at implementing Foundry IQ primarily for user behavior tracking. What are your thoughts on the data pipeline design?
+
+[01:31] James Garcia (Customer Success Manager):
+That works. Let's make sure we document everything properly in the Foundry IQ metadata.
+
+[01:42] Amanda Miller (Product Manager):
+Have we discussed the deployment model? Are we going cloud-native or hybrid?
+
+[01:56] Matthew Thomas (Solution Engineer):
+Good point. Foundry IQ has built-in governance features. We can configure data lineage tracking and implement role-based access controls at the ontology level.
+
+[02:04] James Garcia (Customer Success Manager):
+What about cloud architecture? That's critical for our implementation.
+
+[02:13] Matthew Thomas (Solution Engineer):
+I'm concerned about data quality. Can we implement validation checks in the pipeline?
+
+[02:21] James Garcia (Customer Success Manager):
+I think we can have the basic ontology and core pipelines ready in about 6 weeks, then iterate from there.
+
+[02:34] James Garcia (Customer Success Manager):
+Yes, Foundry IQ supports data quality checks at multiple stages. We can add assertions and schema validations.
+
+[02:48] Kevin Williams (Data Engineer):
+Just need final approval on the data security protocols. Should have that by end of week.
+
+[02:58] Matthew Thomas (Solution Engineer):
+Perfect. Let's set up a follow-up call for next week to review the initial setup.
+
+[03:13] James Garcia (Customer Success Manager):
+Agreed. We'll need to set up the ontology properly. Have we mapped out all the object types we need to ingest?
+
+[03:22] James Garcia (Customer Success Manager):
+Agreed. Are there any blockers we need to address before we proceed?
+
+[03:32] Matthew Thomas (Solution Engineer):
+Definitely. And we can set up CI/CD pipelines to automate the deployment of those transformations.
+
+[03:43] Amanda Miller (Product Manager):
+Right, and we can use Quiver for the complex analytical queries. The query optimization in Foundry IQ is pretty impressive.
+
+[03:53] Matthew Thomas (Solution Engineer):
+Yes, I've created a draft ontology with about 15 object types. The main challenge is the data sync frequency - we need near real-time for some datasets.
+
+[04:06] James Garcia (Customer Success Manager):
+We're planning for a cloud deployment on AWS. Foundry IQ integrates well with existing cloud infrastructure.
+
+[04:18] Amanda Miller (Product Manager):
+Foundry IQ supports streaming ingestion through the event-based pipelines. We could leverage that for time-sensitive data.
+
+
+
+================================================================================
+CALL #011 - Velocity Group (Healthcare)
+Date: 2026-02-11
+Participants: 4
+================================================================================
+
+[00:00] Jessica Taylor (Customer Success Manager):
+Good morning everyone, thanks for joining today's call. I'm Jessica Taylor and I'll be walking you through Foundry IQ implementation for Velocity Group.
+
+[00:08] Jessica Taylor (Customer Success Manager):
+Let me quickly introduce everyone on the call.
+
+[00:12] Ashley Miller (Solution Engineer):
+Hi everyone, I'm Ashley Miller, Solution Engineer on the project.
+
+[00:17] Daniel White (Technical Lead):
+Hi everyone, I'm Daniel White, Technical Lead on the project.
+
+[00:22] James Thomas (Solution Architect):
+Hi everyone, I'm James Thomas, Solution Architect on the project.
+
+[00:32] Daniel White (Technical Lead):
+From a EHR integration perspective, we need to ensure the integration follows best practices. I've been reviewing the API documentation.
+
+[00:43] James Thomas (Solution Architect):
+We're planning for a cloud deployment on AWS. Foundry IQ integrates well with existing cloud infrastructure.
+
+[00:56] Ashley Miller (Solution Engineer):
+Foundry IQ supports streaming ingestion through the event-based pipelines. We could leverage that for time-sensitive data.
+
+[01:11] Daniel White (Technical Lead):
+Yes, I've created a draft ontology with about 15 object types. The main challenge is the data sync frequency - we need near real-time for some datasets.
+
+[01:24] Ashley Miller (Solution Engineer):
+Just need final approval on the data security protocols. Should have that by end of week.
+
+[01:32] Daniel White (Technical Lead):
+For the patient analytics use case, we'll need to create several derived datasets. The build scheduler will be important there.
+
+[01:44] Jessica Taylor (Customer Success Manager):
+I think we should consider a multi-layered approach. We can use Foundry IQ's data transformation capabilities to build our intermediate layer.
+
+[01:52] Ashley Miller (Solution Engineer):
+That works. Let's make sure we document everything properly in the Foundry IQ metadata.
+
+[02:03] James Thomas (Solution Architect):
+So let's dive into the architecture. We're looking at implementing Foundry IQ primarily for patient analytics. What are your thoughts on the data pipeline design?
+
+[02:18] Daniel White (Technical Lead):
+Sounds good. Thanks everyone for the productive discussion.
+
+[02:28] James Thomas (Solution Architect):
+Perfect. Let's set up a follow-up call for next week to review the initial setup.
+
+[02:41] Ashley Miller (Solution Engineer):
+Definitely. And we can set up CI/CD pipelines to automate the deployment of those transformations.
+
+[02:52] James Thomas (Solution Architect):
+I think we can have the basic ontology and core pipelines ready in about 6 weeks, then iterate from there.
+
+[03:07] Daniel White (Technical Lead):
+I've worked with the Workshop module before - it's quite powerful for building custom applications on top of the ontology.
+
+[03:17] Jessica Taylor (Customer Success Manager):
+Good point. Foundry IQ has built-in governance features. We can configure data lineage tracking and implement role-based access controls at the ontology level.
+
+[03:30] Jessica Taylor (Customer Success Manager):
+What about EHR integration? That's critical for our implementation.
+
+[03:43] Daniel White (Technical Lead):
+Right, and we can use Quiver for the complex analytical queries. The query optimization in Foundry IQ is pretty impressive.
+
+[03:52] Ashley Miller (Solution Engineer):
+Agreed. Are there any blockers we need to address before we proceed?
+
+[04:06] Ashley Miller (Solution Engineer):
+What's the timeline looking like for the initial MVP?
+
+[04:21] Ashley Miller (Solution Engineer):
+Have we discussed the deployment model? Are we going cloud-native or hybrid?
+
+[04:30] James Thomas (Solution Architect):
+We should also plan for the ETL jobs. I'm thinking we use the Code Repositories feature to version control our transformations.
+
+[04:41] Daniel White (Technical Lead):
+Agreed. We'll need to set up the ontology properly. Have we mapped out all the object types we need to ingest?
+
+[04:52] James Thomas (Solution Architect):
+Yes, Foundry IQ supports data quality checks at multiple stages. We can add assertions and schema validations.
+
+[05:07] Jessica Taylor (Customer Success Manager):
+I'm concerned about data quality. Can we implement validation checks in the pipeline?
+
+
+
+================================================================================
+CALL #012 - Vertex Group (Financial Services)
+Date: 2026-02-11
+Participants: 3
+================================================================================
+
+[00:00] Brian Brown (Customer Success Manager):
+Good morning everyone, thanks for joining today's call. I'm Brian Brown and I'll be walking you through Foundry IQ implementation for Vertex Group.
+
+[00:08] Brian Brown (Customer Success Manager):
+Let me quickly introduce everyone on the call.
+
+[00:12] Emily Anderson (Solution Architect):
+Hi everyone, I'm Emily Anderson, Solution Architect on the project.
+
+[00:17] Sarah Lee (Product Manager):
+Hi everyone, I'm Sarah Lee, Product Manager on the project.
+
+[00:27] Sarah Lee (Product Manager):
+I've worked with the Workshop module before - it's quite powerful for building custom applications on top of the ontology.
+
+[00:40] Brian Brown (Customer Success Manager):
+Good point. Foundry IQ has built-in governance features. We can configure data lineage tracking and implement role-based access controls at the ontology level.
+
+[00:49] Emily Anderson (Solution Architect):
+Agreed. We'll need to set up the ontology properly. Have we mapped out all the object types we need to ingest?
+
+[00:57] Brian Brown (Customer Success Manager):
+Foundry IQ supports streaming ingestion through the event-based pipelines. We could leverage that for time-sensitive data.
+
+[01:05] Emily Anderson (Solution Architect):
+We should also plan for the ETL jobs. I'm thinking we use the Code Repositories feature to version control our transformations.
+
+[01:17] Emily Anderson (Solution Architect):
+Have we discussed the deployment model? Are we going cloud-native or hybrid?
+
+[01:32] Brian Brown (Customer Success Manager):
+For the risk analytics use case, we'll need to create several derived datasets. The build scheduler will be important there.
+
+[01:41] Brian Brown (Customer Success Manager):
+Definitely. And we can set up CI/CD pipelines to automate the deployment of those transformations.
+
+[01:51] Brian Brown (Customer Success Manager):
+So let's dive into the architecture. We're looking at implementing Foundry IQ primarily for risk analytics. What are your thoughts on the data pipeline design?
+
+[02:06] Sarah Lee (Product Manager):
+What about SOC 2 compliance? That's critical for our implementation.
+
+[02:15] Emily Anderson (Solution Architect):
+Agreed. Are there any blockers we need to address before we proceed?
+
+[02:25] Emily Anderson (Solution Architect):
+Right, and we can use Quiver for the complex analytical queries. The query optimization in Foundry IQ is pretty impressive.
+
+[02:35] Emily Anderson (Solution Architect):
+Yes, Foundry IQ supports data quality checks at multiple stages. We can add assertions and schema validations.
+
+[02:49] Brian Brown (Customer Success Manager):
+What's the timeline looking like for the initial MVP?
+
+[02:58] Brian Brown (Customer Success Manager):
+Yes, I've created a draft ontology with about 15 object types. The main challenge is the data sync frequency - we need near real-time for some datasets.
+
+[03:09] Sarah Lee (Product Manager):
+Perfect. Let's set up a follow-up call for next week to review the initial setup.
+
+[03:22] Brian Brown (Customer Success Manager):
+From a SOC 2 compliance perspective, we need to ensure the integration follows best practices. I've been reviewing the API documentation.
+
+[03:36] Sarah Lee (Product Manager):
+We're planning for a cloud deployment on AWS. Foundry IQ integrates well with existing cloud infrastructure.
+
+[03:50] Emily Anderson (Solution Architect):
+Sounds good. Thanks everyone for the productive discussion.
+
+[04:00] Brian Brown (Customer Success Manager):
+That works. Let's make sure we document everything properly in the Foundry IQ metadata.
+
+[04:10] Emily Anderson (Solution Architect):
+I'm concerned about data quality. Can we implement validation checks in the pipeline?
+
+[04:19] Brian Brown (Customer Success Manager):
+I think we can have the basic ontology and core pipelines ready in about 6 weeks, then iterate from there.
+
+[04:28] Brian Brown (Customer Success Manager):
+Just need final approval on the data security protocols. Should have that by end of week.
+
+
+
+================================================================================
+CALL #013 - Catalyst Corp (Retail)
+Date: 2026-02-11
+Participants: 3
+================================================================================
+
+[00:00] Brian Brown (Solution Engineer):
+Good morning everyone, thanks for joining today's call. I'm Brian Brown and I'll be walking you through Foundry IQ implementation for Catalyst Corp.
+
+[00:08] Brian Brown (Solution Engineer):
+Let me quickly introduce everyone on the call.
+
+[00:12] David Johnson (Customer Success Manager):
+Hi everyone, I'm David Johnson, Customer Success Manager on the project.
+
+[00:17] Jessica Anderson (Data Engineer):
+Hi everyone, I'm Jessica Anderson, Data Engineer on the project.
+
+[00:27] Jessica Anderson (Data Engineer):
+Agreed. We'll need to set up the ontology properly. Have we mapped out all the object types we need to ingest?
+
+[00:36] Jessica Anderson (Data Engineer):
+Yes, I've created a draft ontology with about 15 object types. The main challenge is the data sync frequency - we need near real-time for some datasets.
+
+[00:47] Jessica Anderson (Data Engineer):
+Foundry IQ supports streaming ingestion through the event-based pipelines. We could leverage that for time-sensitive data.
+
+[00:57] Brian Brown (Solution Engineer):
+We're planning for a cloud deployment on AWS. Foundry IQ integrates well with existing cloud infrastructure.
+
+[01:07] Jessica Anderson (Data Engineer):
+Right, and we can use Quiver for the complex analytical queries. The query optimization in Foundry IQ is pretty impressive.
+
+[01:21] David Johnson (Customer Success Manager):
+For the demand forecasting use case, we'll need to create several derived datasets. The build scheduler will be important there.
+
+[01:33] David Johnson (Customer Success Manager):
+Definitely. And we can set up CI/CD pipelines to automate the deployment of those transformations.
+
+[01:41] Jessica Anderson (Data Engineer):
+I'm concerned about data quality. Can we implement validation checks in the pipeline?
+
+[01:54] Brian Brown (Solution Engineer):
+I think we should consider a multi-layered approach. We can use Foundry IQ's data transformation capabilities to build our intermediate layer.
+
+[02:02] Jessica Anderson (Data Engineer):
+I think we can have the basic ontology and core pipelines ready in about 6 weeks, then iterate from there.
+
+[02:10] Jessica Anderson (Data Engineer):
+Agreed. Are there any blockers we need to address before we proceed?
+
+[02:20] Brian Brown (Solution Engineer):
+Perfect. Let's set up a follow-up call for next week to review the initial setup.
+
+[02:28] Brian Brown (Solution Engineer):
+That works. Let's make sure we document everything properly in the Foundry IQ metadata.
+
+[02:41] David Johnson (Customer Success Manager):
+Yes, Foundry IQ supports data quality checks at multiple stages. We can add assertions and schema validations.
+
+[02:53] Jessica Anderson (Data Engineer):
+So let's dive into the architecture. We're looking at implementing Foundry IQ primarily for demand forecasting. What are your thoughts on the data pipeline design?
+
+[03:07] Brian Brown (Solution Engineer):
+Just need final approval on the data security protocols. Should have that by end of week.
+
+[03:20] Jessica Anderson (Data Engineer):
+I've worked with the Workshop module before - it's quite powerful for building custom applications on top of the ontology.
+
+[03:29] Jessica Anderson (Data Engineer):
+Good point. Foundry IQ has built-in governance features. We can configure data lineage tracking and implement role-based access controls at the ontology level.
+
+[03:44] Jessica Anderson (Data Engineer):
+We should also plan for the ETL jobs. I'm thinking we use the Code Repositories feature to version control our transformations.
+
+[03:57] Brian Brown (Solution Engineer):
+What's the timeline looking like for the initial MVP?
+
+[04:11] David Johnson (Customer Success Manager):
+Sounds good. Thanks everyone for the productive discussion.
+
+[04:25] Jessica Anderson (Data Engineer):
+What about real-time data? That's critical for our implementation.
+
+
+
+================================================================================
+CALL #014 - Quantum Systems (Manufacturing)
+Date: 2026-02-11
+Participants: 4
+================================================================================
+
+[00:00] Jessica Clark (Data Engineer):
+Good morning everyone, thanks for joining today's call. I'm Jessica Clark and I'll be walking you through Foundry IQ implementation for Quantum Systems.
+
+[00:08] Jessica Clark (Data Engineer):
+Let me quickly introduce everyone on the call.
+
+[00:12] Jennifer Moore (Technical Lead):
+Hi everyone, I'm Jennifer Moore, Technical Lead on the project.
+
+[00:17] Tom Harris (Customer Success Manager):
+Hi everyone, I'm Tom Harris, Customer Success Manager on the project.
+
+[00:22] Amanda Lee (Product Manager):
+Hi everyone, I'm Amanda Lee, Product Manager on the project.
+
+[00:32] Jennifer Moore (Technical Lead):
+Definitely. And we can set up CI/CD pipelines to automate the deployment of those transformations.
+
+[00:45] Jennifer Moore (Technical Lead):
+For the operational efficiency use case, we'll need to create several derived datasets. The build scheduler will be important there.
+
+[00:54] Jennifer Moore (Technical Lead):
+We should also plan for the ETL jobs. I'm thinking we use the Code Repositories feature to version control our transformations.
+
+[01:08] Amanda Lee (Product Manager):
+Foundry IQ supports streaming ingestion through the event-based pipelines. We could leverage that for time-sensitive data.
+
+[01:23] Jessica Clark (Data Engineer):
+I've worked with the Workshop module before - it's quite powerful for building custom applications on top of the ontology.
+
+[01:34] Jessica Clark (Data Engineer):
+I think we should consider a multi-layered approach. We can use Foundry IQ's data transformation capabilities to build our intermediate layer.
+
+[01:42] Jennifer Moore (Technical Lead):
+We're planning for a cloud deployment on AWS. Foundry IQ integrates well with existing cloud infrastructure.
+
+[01:54] Jennifer Moore (Technical Lead):
+Perfect. Let's set up a follow-up call for next week to review the initial setup.
+
+[02:09] Jennifer Moore (Technical Lead):
+Just need final approval on the data security protocols. Should have that by end of week.
+
+[02:22] Jessica Clark (Data Engineer):
+What's the timeline looking like for the initial MVP?
+
+[02:35] Tom Harris (Customer Success Manager):
+What about supply chain optimization? That's critical for our implementation.
+
+[02:46] Amanda Lee (Product Manager):
+Yes, Foundry IQ supports data quality checks at multiple stages. We can add assertions and schema validations.
+
+[02:54] Jessica Clark (Data Engineer):
+Yes, I've created a draft ontology with about 15 object types. The main challenge is the data sync frequency - we need near real-time for some datasets.
+
+[03:03] Jennifer Moore (Technical Lead):
+From a supply chain optimization perspective, we need to ensure the integration follows best practices. I've been reviewing the API documentation.
+
+[03:17] Tom Harris (Customer Success Manager):
+That works. Let's make sure we document everything properly in the Foundry IQ metadata.
+
+[03:28] Amanda Lee (Product Manager):
+Good point. Foundry IQ has built-in governance features. We can configure data lineage tracking and implement role-based access controls at the ontology level.
+
+[03:37] Amanda Lee (Product Manager):
+Have we discussed the deployment model? Are we going cloud-native or hybrid?
+
+[03:51] Amanda Lee (Product Manager):
+Agreed. We'll need to set up the ontology properly. Have we mapped out all the object types we need to ingest?
+
+[04:05] Jessica Clark (Data Engineer):
+Agreed. Are there any blockers we need to address before we proceed?
+
+[04:20] Amanda Lee (Product Manager):
+Right, and we can use Quiver for the complex analytical queries. The query optimization in Foundry IQ is pretty impressive.
+
+[04:29] Tom Harris (Customer Success Manager):
+So let's dive into the architecture. We're looking at implementing Foundry IQ primarily for operational efficiency. What are your thoughts on the data pipeline design?
+
+[04:40] Jennifer Moore (Technical Lead):
+Sounds good. Thanks everyone for the productive discussion.
+
+
+
+================================================================================
+CALL #015 - Velocity Group (Technology)
+Date: 2026-02-11
+Participants: 4
+================================================================================
+
+[00:00] Emily Brown (Solution Architect):
+Good morning everyone, thanks for joining today's call. I'm Emily Brown and I'll be walking you through Foundry IQ implementation for Velocity Group.
+
+[00:08] Emily Brown (Solution Architect):
+Let me quickly introduce everyone on the call.
+
+[00:12] Emily Williams (Product Manager):
+Hi everyone, I'm Emily Williams, Product Manager on the project.
+
+[00:17] Jennifer Johnson (Solution Engineer):
+Hi everyone, I'm Jennifer Johnson, Solution Engineer on the project.
+
+[00:22] Sarah Thomas (Customer Success Manager):
+Hi everyone, I'm Sarah Thomas, Customer Success Manager on the project.
+
+[00:32] Emily Brown (Solution Architect):
+Yes, Foundry IQ supports data quality checks at multiple stages. We can add assertions and schema validations.
+
+[00:45] Emily Brown (Solution Architect):
+Perfect. Let's set up a follow-up call for next week to review the initial setup.
+
+[00:58] Jennifer Johnson (Solution Engineer):
+What about cloud architecture? That's critical for our implementation.
+
+[01:12] Sarah Thomas (Customer Success Manager):
+That works. Let's make sure we document everything properly in the Foundry IQ metadata.
+
+[01:20] Sarah Thomas (Customer Success Manager):
+Sounds good. Thanks everyone for the productive discussion.
+
+[01:28] Emily Brown (Solution Architect):
+We're planning for a cloud deployment on AWS. Foundry IQ integrates well with existing cloud infrastructure.
+
+[01:40] Emily Brown (Solution Architect):
+So let's dive into the architecture. We're looking at implementing Foundry IQ primarily for system monitoring. What are your thoughts on the data pipeline design?
+
+[01:53] Sarah Thomas (Customer Success Manager):
+What's the timeline looking like for the initial MVP?
+
+[02:06] Jennifer Johnson (Solution Engineer):
+I think we can have the basic ontology and core pipelines ready in about 6 weeks, then iterate from there.
+
+[02:16] Emily Williams (Product Manager):
+Agreed. Are there any blockers we need to address before we proceed?
+
+[02:27] Emily Brown (Solution Architect):
+Definitely. And we can set up CI/CD pipelines to automate the deployment of those transformations.
+
+[02:38] Emily Brown (Solution Architect):
+Have we discussed the deployment model? Are we going cloud-native or hybrid?
+
+[02:51] Sarah Thomas (Customer Success Manager):
+Foundry IQ supports streaming ingestion through the event-based pipelines. We could leverage that for time-sensitive data.
+
+[03:04] Emily Williams (Product Manager):
+For the system monitoring use case, we'll need to create several derived datasets. The build scheduler will be important there.
+
+[03:15] Jennifer Johnson (Solution Engineer):
+From a cloud architecture perspective, we need to ensure the integration follows best practices. I've been reviewing the API documentation.
+
+[03:26] Emily Brown (Solution Architect):
+Agreed. We'll need to set up the ontology properly. Have we mapped out all the object types we need to ingest?
+
+[03:38] Sarah Thomas (Customer Success Manager):
+I've worked with the Workshop module before - it's quite powerful for building custom applications on top of the ontology.
+
+[03:48] Emily Brown (Solution Architect):
+Just need final approval on the data security protocols. Should have that by end of week.
+
+[03:57] Emily Williams (Product Manager):
+I'm concerned about data quality. Can we implement validation checks in the pipeline?
+
+[04:10] Emily Williams (Product Manager):
+I think we should consider a multi-layered approach. We can use Foundry IQ's data transformation capabilities to build our intermediate layer.
+
+[04:20] Jennifer Johnson (Solution Engineer):
+Right, and we can use Quiver for the complex analytical queries. The query optimization in Foundry IQ is pretty impressive.
+
+[04:31] Emily Brown (Solution Architect):
+Yes, I've created a draft ontology with about 15 object types. The main challenge is the data sync frequency - we need near real-time for some datasets.
+
+
+
+================================================================================
+CALL #016 - Catalyst Corp (Healthcare)
+Date: 2026-02-11
+Participants: 3
+================================================================================
+
+[00:00] Emily Johnson (Solution Architect):
+Good morning everyone, thanks for joining today's call. I'm Emily Johnson and I'll be walking you through Foundry IQ implementation for Catalyst Corp.
+
+[00:08] Emily Johnson (Solution Architect):
+Let me quickly introduce everyone on the call.
+
+[00:12] Kevin Thompson (Data Engineer):
+Hi everyone, I'm Kevin Thompson, Data Engineer on the project.
+
+[00:17] Jessica Martin (Customer Success Manager):
+Hi everyone, I'm Jessica Martin, Customer Success Manager on the project.
+
+[00:27] Jessica Martin (Customer Success Manager):
+Yes, Foundry IQ supports data quality checks at multiple stages. We can add assertions and schema validations.
+
+[00:38] Jessica Martin (Customer Success Manager):
+From a data privacy perspective, we need to ensure the integration follows best practices. I've been reviewing the API documentation.
+
+[00:49] Jessica Martin (Customer Success Manager):
+I think we can have the basic ontology and core pipelines ready in about 6 weeks, then iterate from there.
+
+[01:03] Emily Johnson (Solution Architect):
+What's the timeline looking like for the initial MVP?
+
+[01:13] Emily Johnson (Solution Architect):
+I think we should consider a multi-layered approach. We can use Foundry IQ's data transformation capabilities to build our intermediate layer.
+
+[01:22] Emily Johnson (Solution Architect):
+Foundry IQ supports streaming ingestion through the event-based pipelines. We could leverage that for time-sensitive data.
+
+[01:33] Jessica Martin (Customer Success Manager):
+What about data privacy? That's critical for our implementation.
+
+[01:48] Emily Johnson (Solution Architect):
+We should also plan for the ETL jobs. I'm thinking we use the Code Repositories feature to version control our transformations.
+
+[01:59] Kevin Thompson (Data Engineer):
+So let's dive into the architecture. We're looking at implementing Foundry IQ primarily for clinical decision support. What are your thoughts on the data pipeline design?
+
+[02:14] Jessica Martin (Customer Success Manager):
+Have we discussed the deployment model? Are we going cloud-native or hybrid?
+
+[02:27] Jessica Martin (Customer Success Manager):
+For the clinical decision support use case, we'll need to create several derived datasets. The build scheduler will be important there.
+
+[02:40] Emily Johnson (Solution Architect):
+Perfect. Let's set up a follow-up call for next week to review the initial setup.
+
+[02:49] Jessica Martin (Customer Success Manager):
+Yes, I've created a draft ontology with about 15 object types. The main challenge is the data sync frequency - we need near real-time for some datasets.
+
+[03:00] Jessica Martin (Customer Success Manager):
+Just need final approval on the data security protocols. Should have that by end of week.
+
+[03:11] Emily Johnson (Solution Architect):
+Agreed. Are there any blockers we need to address before we proceed?
+
+[03:19] Emily Johnson (Solution Architect):
+Sounds good. Thanks everyone for the productive discussion.
+
+[03:34] Emily Johnson (Solution Architect):
+Definitely. And we can set up CI/CD pipelines to automate the deployment of those transformations.
+
+[03:49] Jessica Martin (Customer Success Manager):
+That works. Let's make sure we document everything properly in the Foundry IQ metadata.
+
+[03:58] Jessica Martin (Customer Success Manager):
+I've worked with the Workshop module before - it's quite powerful for building custom applications on top of the ontology.
+
+[04:08] Kevin Thompson (Data Engineer):
+Good point. Foundry IQ has built-in governance features. We can configure data lineage tracking and implement role-based access controls at the ontology level.
+
+[04:21] Emily Johnson (Solution Architect):
+We're planning for a cloud deployment on AWS. Foundry IQ integrates well with existing cloud infrastructure.
+
+[04:35] Emily Johnson (Solution Architect):
+Right, and we can use Quiver for the complex analytical queries. The query optimization in Foundry IQ is pretty impressive.
+
+[04:50] Jessica Martin (Customer Success Manager):
+Agreed. We'll need to set up the ontology properly. Have we mapped out all the object types we need to ingest?
+
+
+
+================================================================================
+CALL #017 - Summit Technologies (Financial Services)
+Date: 2026-02-11
+Participants: 5
+================================================================================
+
+[00:00] Michelle Davis (Solution Engineer):
+Good morning everyone, thanks for joining today's call. I'm Michelle Davis and I'll be walking you through Foundry IQ implementation for Summit Technologies.
+
+[00:08] Michelle Davis (Solution Engineer):
+Let me quickly introduce everyone on the call.
+
+[00:12] Amanda Brown (Solution Architect):
+Hi everyone, I'm Amanda Brown, Solution Architect on the project.
+
+[00:17] Sarah Martinez (Product Manager):
+Hi everyone, I'm Sarah Martinez, Product Manager on the project.
+
+[00:22] Robert Moore (Data Engineer):
+Hi everyone, I'm Robert Moore, Data Engineer on the project.
+
+[00:27] Emily Davis (Customer Success Manager):
+Hi everyone, I'm Emily Davis, Customer Success Manager on the project.
+
+[00:37] Amanda Brown (Solution Architect):
+Agreed. Are there any blockers we need to address before we proceed?
+
+[00:52] Sarah Martinez (Product Manager):
+That works. Let's make sure we document everything properly in the Foundry IQ metadata.
+
+[01:02] Emily Davis (Customer Success Manager):
+Right, and we can use Quiver for the complex analytical queries. The query optimization in Foundry IQ is pretty impressive.
+
+[01:11] Robert Moore (Data Engineer):
+Yes, Foundry IQ supports data quality checks at multiple stages. We can add assertions and schema validations.
+
+[01:23] Sarah Martinez (Product Manager):
+What's the timeline looking like for the initial MVP?
+
+[01:38] Emily Davis (Customer Success Manager):
+I think we should consider a multi-layered approach. We can use Foundry IQ's data transformation capabilities to build our intermediate layer.
+
+[01:47] Sarah Martinez (Product Manager):
+I think we can have the basic ontology and core pipelines ready in about 6 weeks, then iterate from there.
+
+[01:56] Sarah Martinez (Product Manager):
+We're planning for a cloud deployment on AWS. Foundry IQ integrates well with existing cloud infrastructure.
+
+[02:10] Amanda Brown (Solution Architect):
+I've worked with the Workshop module before - it's quite powerful for building custom applications on top of the ontology.
+
+[02:22] Emily Davis (Customer Success Manager):
+So let's dive into the architecture. We're looking at implementing Foundry IQ primarily for customer behavior analysis. What are your thoughts on the data pipeline design?
+
+[02:37] Emily Davis (Customer Success Manager):
+Agreed. We'll need to set up the ontology properly. Have we mapped out all the object types we need to ingest?
+
+[02:51] Robert Moore (Data Engineer):
+Perfect. Let's set up a follow-up call for next week to review the initial setup.
+
+[03:02] Amanda Brown (Solution Architect):
+Foundry IQ supports streaming ingestion through the event-based pipelines. We could leverage that for time-sensitive data.
+
+[03:17] Emily Davis (Customer Success Manager):
+Just need final approval on the data security protocols. Should have that by end of week.
+
+[03:28] Amanda Brown (Solution Architect):
+What about regulatory compliance? That's critical for our implementation.
+
+[03:36] Amanda Brown (Solution Architect):
+Have we discussed the deployment model? Are we going cloud-native or hybrid?
+
+[03:49] Emily Davis (Customer Success Manager):
+From a regulatory compliance perspective, we need to ensure the integration follows best practices. I've been reviewing the API documentation.
+
+[03:58] Robert Moore (Data Engineer):
+I'm concerned about data quality. Can we implement validation checks in the pipeline?
+
+[04:06] Emily Davis (Customer Success Manager):
+For the customer behavior analysis use case, we'll need to create several derived datasets. The build scheduler will be important there.
+
+[04:15] Sarah Martinez (Product Manager):
+Good point. Foundry IQ has built-in governance features. We can configure data lineage tracking and implement role-based access controls at the ontology level.
+
+[04:28] Emily Davis (Customer Success Manager):
+We should also plan for the ETL jobs. I'm thinking we use the Code Repositories feature to version control our transformations.
+
+[04:42] Emily Davis (Customer Success Manager):
+Definitely. And we can set up CI/CD pipelines to automate the deployment of those transformations.
+
+[04:56] Sarah Martinez (Product Manager):
+Sounds good. Thanks everyone for the productive discussion.
+
+[05:05] Michelle Davis (Solution Engineer):
+Yes, I've created a draft ontology with about 15 object types. The main challenge is the data sync frequency - we need near real-time for some datasets.
+
+
+
+================================================================================
+CALL #018 - TechVenture Inc (Retail)
+Date: 2026-02-11
+Participants: 5
+================================================================================
+
+[00:00] Jessica Moore (Solution Architect):
+Good morning everyone, thanks for joining today's call. I'm Jessica Moore and I'll be walking you through Foundry IQ implementation for TechVenture Inc.
+
+[00:08] Jessica Moore (Solution Architect):
+Let me quickly introduce everyone on the call.
+
+[00:12] David Taylor (Solution Engineer):
+Hi everyone, I'm David Taylor, Solution Engineer on the project.
+
+[00:17] Amanda Lee (Customer Success Manager):
+Hi everyone, I'm Amanda Lee, Customer Success Manager on the project.
+
+[00:22] Michael Martin (Technical Lead):
+Hi everyone, I'm Michael Martin, Technical Lead on the project.
+
+[00:27] Ashley Martinez (Product Manager):
+Hi everyone, I'm Ashley Martinez, Product Manager on the project.
+
+[00:37] David Taylor (Solution Engineer):
+Right, and we can use Quiver for the complex analytical queries. The query optimization in Foundry IQ is pretty impressive.
+
+[00:47] David Taylor (Solution Engineer):
+For the customer segmentation use case, we'll need to create several derived datasets. The build scheduler will be important there.
+
+[01:02] Michael Martin (Technical Lead):
+From a inventory optimization perspective, we need to ensure the integration follows best practices. I've been reviewing the API documentation.
+
+[01:10] Ashley Martinez (Product Manager):
+Just need final approval on the data security protocols. Should have that by end of week.
+
+[01:19] Amanda Lee (Customer Success Manager):
+I think we can have the basic ontology and core pipelines ready in about 6 weeks, then iterate from there.
+
+[01:28] Amanda Lee (Customer Success Manager):
+We're planning for a cloud deployment on AWS. Foundry IQ integrates well with existing cloud infrastructure.
+
+[01:38] Ashley Martinez (Product Manager):
+That works. Let's make sure we document everything properly in the Foundry IQ metadata.
+
+[01:47] David Taylor (Solution Engineer):
+What about inventory optimization? That's critical for our implementation.
+
+[01:58] David Taylor (Solution Engineer):
+Agreed. We'll need to set up the ontology properly. Have we mapped out all the object types we need to ingest?
+
+[02:08] Ashley Martinez (Product Manager):
+Yes, I've created a draft ontology with about 15 object types. The main challenge is the data sync frequency - we need near real-time for some datasets.
+
+[02:23] Amanda Lee (Customer Success Manager):
+Yes, Foundry IQ supports data quality checks at multiple stages. We can add assertions and schema validations.
+
+[02:38] David Taylor (Solution Engineer):
+Perfect. Let's set up a follow-up call for next week to review the initial setup.
+
+[02:49] Amanda Lee (Customer Success Manager):
+We should also plan for the ETL jobs. I'm thinking we use the Code Repositories feature to version control our transformations.
+
+[03:01] Jessica Moore (Solution Architect):
+I think we should consider a multi-layered approach. We can use Foundry IQ's data transformation capabilities to build our intermediate layer.
+
+[03:12] David Taylor (Solution Engineer):
+What's the timeline looking like for the initial MVP?
+
+[03:25] David Taylor (Solution Engineer):
+So let's dive into the architecture. We're looking at implementing Foundry IQ primarily for customer segmentation. What are your thoughts on the data pipeline design?
+
+[03:35] Amanda Lee (Customer Success Manager):
+Definitely. And we can set up CI/CD pipelines to automate the deployment of those transformations.
+
+[03:48] Michael Martin (Technical Lead):
+Good point. Foundry IQ has built-in governance features. We can configure data lineage tracking and implement role-based access controls at the ontology level.
+
+[03:58] Ashley Martinez (Product Manager):
+Have we discussed the deployment model? Are we going cloud-native or hybrid?
+
+[04:07] Michael Martin (Technical Lead):
+I've worked with the Workshop module before - it's quite powerful for building custom applications on top of the ontology.
+
+
+
+================================================================================
+CALL #019 - Pioneer Tech (Manufacturing)
+Date: 2026-02-11
+Participants: 5
+================================================================================
+
+[00:00] Jennifer Brown (Data Engineer):
+Good morning everyone, thanks for joining today's call. I'm Jennifer Brown and I'll be walking you through Foundry IQ implementation for Pioneer Tech.
+
+[00:08] Jennifer Brown (Data Engineer):
+Let me quickly introduce everyone on the call.
+
+[00:12] Amanda Clark (Technical Lead):
+Hi everyone, I'm Amanda Clark, Technical Lead on the project.
+
+[00:17] James White (Product Manager):
+Hi everyone, I'm James White, Product Manager on the project.
+
+[00:22] Amanda Martin (Customer Success Manager):
+Hi everyone, I'm Amanda Martin, Customer Success Manager on the project.
+
+[00:27] Matthew Williams (Solution Architect):
+Hi everyone, I'm Matthew Williams, Solution Architect on the project.
+
+[00:37] Matthew Williams (Solution Architect):
+Have we discussed the deployment model? Are we going cloud-native or hybrid?
+
+[00:48] Amanda Martin (Customer Success Manager):
+That works. Let's make sure we document everything properly in the Foundry IQ metadata.
+
+[00:57] Amanda Martin (Customer Success Manager):
+What about predictive maintenance? That's critical for our implementation.
+
+[01:06] Jennifer Brown (Data Engineer):
+Yes, I've created a draft ontology with about 15 object types. The main challenge is the data sync frequency - we need near real-time for some datasets.
+
+[01:14] Jennifer Brown (Data Engineer):
+We should also plan for the ETL jobs. I'm thinking we use the Code Repositories feature to version control our transformations.
+
+[01:29] James White (Product Manager):
+Sounds good. Thanks everyone for the productive discussion.
+
+[01:37] Matthew Williams (Solution Architect):
+Just need final approval on the data security protocols. Should have that by end of week.
+
+[01:47] Jennifer Brown (Data Engineer):
+Agreed. We'll need to set up the ontology properly. Have we mapped out all the object types we need to ingest?
+
+[01:58] Jennifer Brown (Data Engineer):
+Yes, Foundry IQ supports data quality checks at multiple stages. We can add assertions and schema validations.
+
+[02:08] Matthew Williams (Solution Architect):
+Right, and we can use Quiver for the complex analytical queries. The query optimization in Foundry IQ is pretty impressive.
+
+[02:20] Amanda Clark (Technical Lead):
+Foundry IQ supports streaming ingestion through the event-based pipelines. We could leverage that for time-sensitive data.
+
+[02:33] Amanda Clark (Technical Lead):
+I've worked with the Workshop module before - it's quite powerful for building custom applications on top of the ontology.
+
+[02:46] Matthew Williams (Solution Architect):
+Definitely. And we can set up CI/CD pipelines to automate the deployment of those transformations.
+
+[02:59] Amanda Clark (Technical Lead):
+So let's dive into the architecture. We're looking at implementing Foundry IQ primarily for operational efficiency. What are your thoughts on the data pipeline design?
+
+[03:10] Jennifer Brown (Data Engineer):
+Good point. Foundry IQ has built-in governance features. We can configure data lineage tracking and implement role-based access controls at the ontology level.
+
+[03:18] Matthew Williams (Solution Architect):
+I think we can have the basic ontology and core pipelines ready in about 6 weeks, then iterate from there.
+
+[03:30] Amanda Clark (Technical Lead):
+I think we should consider a multi-layered approach. We can use Foundry IQ's data transformation capabilities to build our intermediate layer.
+
+[03:45] Amanda Martin (Customer Success Manager):
+Agreed. Are there any blockers we need to address before we proceed?
+
+[04:00] Amanda Martin (Customer Success Manager):
+From a predictive maintenance perspective, we need to ensure the integration follows best practices. I've been reviewing the API documentation.
+
+[04:08] Amanda Martin (Customer Success Manager):
+For the operational efficiency use case, we'll need to create several derived datasets. The build scheduler will be important there.
+
+[04:18] Amanda Clark (Technical Lead):
+What's the timeline looking like for the initial MVP?
+
+[04:27] Jennifer Brown (Data Engineer):
+Perfect. Let's set up a follow-up call for next week to review the initial setup.
+
+
+
+================================================================================
+CALL #020 - Apex Solutions (Technology)
+Date: 2026-02-11
+Participants: 5
+================================================================================
+
+[00:00] Emily Brown (Data Engineer):
+Good morning everyone, thanks for joining today's call. I'm Emily Brown and I'll be walking you through Foundry IQ implementation for Apex Solutions.
+
+[00:08] Emily Brown (Data Engineer):
+Let me quickly introduce everyone on the call.
+
+[00:12] Sarah Jackson (Technical Lead):
+Hi everyone, I'm Sarah Jackson, Technical Lead on the project.
+
+[00:17] Amanda Thomas (Product Manager):
+Hi everyone, I'm Amanda Thomas, Product Manager on the project.
+
+[00:22] Kevin Williams (Solution Engineer):
+Hi everyone, I'm Kevin Williams, Solution Engineer on the project.
+
+[00:27] Daniel White (Solution Architect):
+Hi everyone, I'm Daniel White, Solution Architect on the project.
+
+[00:37] Amanda Thomas (Product Manager):
+Yes, Foundry IQ supports data quality checks at multiple stages. We can add assertions and schema validations.
+
+[00:52] Sarah Jackson (Technical Lead):
+For the user behavior tracking use case, we'll need to create several derived datasets. The build scheduler will be important there.
+
+[01:04] Amanda Thomas (Product Manager):
+Good point. Foundry IQ has built-in governance features. We can configure data lineage tracking and implement role-based access controls at the ontology level.
+
+[01:12] Kevin Williams (Solution Engineer):
+I'm concerned about data quality. Can we implement validation checks in the pipeline?
+
+[01:25] Emily Brown (Data Engineer):
+Definitely. And we can set up CI/CD pipelines to automate the deployment of those transformations.
+
+[01:33] Kevin Williams (Solution Engineer):
+Foundry IQ supports streaming ingestion through the event-based pipelines. We could leverage that for time-sensitive data.
+
+[01:43] Sarah Jackson (Technical Lead):
+Yes, I've created a draft ontology with about 15 object types. The main challenge is the data sync frequency - we need near real-time for some datasets.
+
+[01:56] Kevin Williams (Solution Engineer):
+Agreed. Are there any blockers we need to address before we proceed?
+
+[02:06] Sarah Jackson (Technical Lead):
+We should also plan for the ETL jobs. I'm thinking we use the Code Repositories feature to version control our transformations.
+
+[02:20] Kevin Williams (Solution Engineer):
+Sounds good. Thanks everyone for the productive discussion.
+
+[02:29] Emily Brown (Data Engineer):
+I think we should consider a multi-layered approach. We can use Foundry IQ's data transformation capabilities to build our intermediate layer.
+
+[02:40] Kevin Williams (Solution Engineer):
+Perfect. Let's set up a follow-up call for next week to review the initial setup.
+
+[02:55] Amanda Thomas (Product Manager):
+From a scalability perspective, we need to ensure the integration follows best practices. I've been reviewing the API documentation.
+
+[03:09] Sarah Jackson (Technical Lead):
+Just need final approval on the data security protocols. Should have that by end of week.
+
+[03:19] Daniel White (Solution Architect):
+What about scalability? That's critical for our implementation.
+
+[03:33] Emily Brown (Data Engineer):
+We're planning for a cloud deployment on AWS. Foundry IQ integrates well with existing cloud infrastructure.
+
+[03:48] Daniel White (Solution Architect):
+Right, and we can use Quiver for the complex analytical queries. The query optimization in Foundry IQ is pretty impressive.
+
+[03:59] Kevin Williams (Solution Engineer):
+I've worked with the Workshop module before - it's quite powerful for building custom applications on top of the ontology.
+
+[04:09] Sarah Jackson (Technical Lead):
+That works. Let's make sure we document everything properly in the Foundry IQ metadata.
+
+[04:24] Amanda Thomas (Product Manager):
+Agreed. We'll need to set up the ontology properly. Have we mapped out all the object types we need to ingest?
+
+[04:35] Emily Brown (Data Engineer):
+I think we can have the basic ontology and core pipelines ready in about 6 weeks, then iterate from there.
+
+[04:47] Sarah Jackson (Technical Lead):
+Have we discussed the deployment model? Are we going cloud-native or hybrid?
+
+[05:01] Sarah Jackson (Technical Lead):
+So let's dive into the architecture. We're looking at implementing Foundry IQ primarily for user behavior tracking. What are your thoughts on the data pipeline design?
+
+
+
