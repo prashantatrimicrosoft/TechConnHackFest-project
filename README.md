@@ -15,3 +15,7 @@ Goal is to capture all best practices, customer challenges / feedback, reference
 
 - Microsoft Copilot Studio
 - MCPs
+
+## View Agent output
+
+![agentoutput1](media/agentoutput1.jpg)
